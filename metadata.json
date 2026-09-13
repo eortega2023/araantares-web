@@ -1,0 +1,6 @@
+{
+  "name": "ARA Y ANTARES SAC",
+  "description": "Topografía, Fotogrametría con Dron y Alquiler de Equipos Topográficos en Tacna. GPS Diferencial Trimble R8s, Estaciones Totales, Drones Phantom 4 Pro v2.0, Teodolitos y Niveles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

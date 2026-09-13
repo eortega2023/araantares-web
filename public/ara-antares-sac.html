@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARA Y ANTARES SAC | Topografía, Fotogrametría con Dron y Alquiler de Equipos Topográficos en Tacna</title>
+  <meta name="description" content="Topografía, Fotogrametría con Dron y Alquiler de Equipos Topográficos en Tacna. GPS Diferencial Trimble R8s, Estaciones Totales, Drones Phantom 4 Pro v2.0, Teodolitos y Niveles.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandRed: '#cc0000',
+            brandDark: '#333333',
+            brandLight: '#f4f4f4',
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #333333;
+      background-color: #ffffff;
+    }
+    ::selection {
+      background-color: #cc0000;
+      color: #ffffff;
+    }
+    .hero-pattern {
+      background-image: radial-gradient(#cc0000 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#1f1f1f] text-gray-200 text-xs py-2 px-4 border-b border-[#333333] hidden md:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-6">
+        <span>📍 Av. Patricio Melendez N° 525, 2do piso, Tacna - Perú</span>
+        <a href="mailto:araantares@gmail.com" class="hover:text-white transition-colors">✉️ araantares@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:052426373" class="hover:text-white transition-colors">📞 (052) 426373</a>
+        <span class="text-gray-600">|</span>
+        <a href="https://wa.me/51981928070" target="_blank" class="hover:text-emerald-400 transition-colors font-semibold">🟢 981928070 (WhatsApp)</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2.5">
+      <a href="#inicio" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-lg bg-[#141414] overflow-hidden flex items-center justify-center p-1 border border-gray-700 shadow-sm shrink-0">
+          <img src="/logo-ara.jpg" alt="Logo ARA & ANTARES SAC" class="w-full h-full object-contain rounded" onerror="this.src='/logo-ara.jpg'">
+        </div>
+        <div>
+          <span class="text-lg sm:text-xl font-black text-[#333333] block leading-none">
+            ARA &amp; ANTARES <span class="text-[#cc0000]">SAC</span>
+          </span>
+          <span class="text-[10px] sm:text-[11px] font-bold text-gray-500 uppercase block mt-1 tracking-wider">
+            Topografía • Dron • Alquiler de Equipos
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="#inicio" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors">Inicio</a>
+        <a href="#puntos-geodesicos" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors flex items-center gap-1.5">
+          <span>Puntos Geodésicos</span>
+          <span class="bg-red-100 text-[#cc0000] text-[10px] font-extrabold px-1.5 py-0.5 rounded-full border border-red-200 leading-none">IGN</span>
+        </a>
+        <a href="#alquiler-equipos" class="text-sm font-bold text-[#cc0000] hover:text-[#a80000] transition-colors">Alquiler de Equipos</a>
+        <a href="#servicios" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors">Servicios</a>
+        <a href="#topografia" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors">Topografía</a>
+        <a href="#nosotros" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors">Nosotros</a>
+        <a href="#contacto" class="text-sm font-semibold text-[#333333] hover:text-[#cc0000] transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden sm:block">
+        <button onclick="openModal()" class="bg-[#cc0000] hover:bg-[#a80000] text-white text-sm font-bold px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all">
+          Cotizar Proyecto / Equipo
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="lg:hidden flex items-center gap-2">
+        <button onclick="openModal()" class="sm:hidden bg-[#cc0000] text-white text-xs font-bold px-3 py-1.5 rounded-md">
+          Cotizar
+        </button>
+        <button id="menu-btn" class="p-2 rounded-lg text-[#333333] hover:bg-gray-100" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 py-4 space-y-3">
+      <a href="#inicio" onclick="toggleMenu()" class="block py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">Inicio</a>
+      <a href="#puntos-geodesicos" onclick="toggleMenu()" class="flex items-center justify-between py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">
+        <span>Puntos Geodésicos</span>
+        <span class="bg-red-100 text-[#cc0000] text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-red-200">IGN</span>
+      </a>
+      <a href="#alquiler-equipos" onclick="toggleMenu()" class="block py-2 text-base font-bold text-[#cc0000] hover:text-[#a80000]">Alquiler de Equipos</a>
+      <a href="#servicios" onclick="toggleMenu()" class="block py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">Servicios</a>
+      <a href="#topografia" onclick="toggleMenu()" class="block py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">Topografía</a>
+      <a href="#nosotros" onclick="toggleMenu()" class="block py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">Nosotros</a>
+      <a href="#contacto" onclick="toggleMenu()" class="block py-2 text-base font-semibold text-[#333333] hover:text-[#cc0000]">Contacto</a>
+      <button onclick="toggleMenu(); openModal();" class="w-full bg-[#cc0000] text-white font-bold py-2.5 rounded-lg">
+        Cotizar Proyecto o Equipo
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="relative min-h-[90vh] flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-[#1a1a1a] text-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=2000&q=80" alt="Ingeniería y Topografía" class="w-full h-full object-cover opacity-20 filter grayscale">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#141414] via-[#1a1a1a]/90 to-[#141414]/95"></div>
+      <div class="absolute inset-0 hero-pattern opacity-10"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#333333] text-gray-200 text-xs font-semibold mb-6 border border-gray-700">
+        <span class="w-2 h-2 rounded-full bg-[#cc0000]"></span>
+        <span>Tacna y Sur del Perú • Minería, Construcción e Infraestructura</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+        Topografía, Fotogrametría con Dron y <span class="text-[#cc0000]">Alquiler de Equipos Topográficos</span> en Tacna
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-gray-300 max-w-3xl font-medium leading-relaxed">
+        Equipo multidisciplinario de profesionales altamente calificados. Calidad y profesionalismo a precios económicos con disponibilidad inmediata de GPS Diferencial Trimble R8s, Drones Phantom 4 Pro y Estaciones Totales.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <a href="#alquiler-equipos" class="w-full sm:w-auto bg-[#cc0000] hover:bg-[#a80000] text-white font-bold px-8 py-3.5 rounded-lg shadow-lg hover:shadow-red-900/40 transition-all text-base">
+          Ver Alquiler de Equipos
+        </a>
+        <a href="#servicios" class="w-full sm:w-auto border-2 border-gray-400 text-white hover:border-white hover:bg-white/10 font-semibold px-8 py-3.5 rounded-lg transition-all text-base">
+          Ver Servicios
+        </a>
+      </div>
+
+      <div class="mt-14 pt-8 border-t border-gray-800 w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+        <div class="bg-white/5 p-3.5 rounded-lg border border-white/5">
+          <h4 class="text-white text-sm font-bold">🛡️ Garantía de Calidad</h4>
+          <p class="text-gray-400 text-xs mt-0.5">Control de calidad estricto en cada obra civil.</p>
+        </div>
+        <div class="bg-white/5 p-3.5 rounded-lg border border-white/5">
+          <h4 class="text-white text-sm font-bold">📡 Equipos de Alta Precisión</h4>
+          <p class="text-gray-400 text-xs mt-0.5">GPS Diferencial, Drones y Estaciones Totales.</p>
+        </div>
+        <div class="bg-white/5 p-3.5 rounded-lg border border-white/5">
+          <h4 class="text-white text-sm font-bold">📋 Asesoría Gratuita</h4>
+          <p class="text-gray-400 text-xs mt-0.5">Saneamiento legal, diseño y consultoría.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUNTOS GEODÉSICOS DE ORDEN C (CERTIFICACIÓN IGN) -->
+  <section id="puntos-geodesicos" class="py-24 px-4 sm:px-6 lg:px-8 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200 text-[#cc0000] text-xs font-black uppercase tracking-wider mb-4">
+          Certificación Oficial IGN • Orden "C"
+        </span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-[#262626] tracking-tight">
+          Puntos Geodésicos de Orden <span class="text-[#cc0000]">"C"</span>
+        </h2>
+        <div class="w-20 h-1 bg-[#cc0000] mx-auto mt-4 mb-5 rounded-full"></div>
+        <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+          Monumentación, rastreo satelital diferencial con GPS geodésico y tramitación completa ante el <strong class="text-[#333333]">Instituto Geográfico Nacional (IGN)</strong> con validez legal vinculante para SUNARP, minería y obras públicas en Tacna y el sur del Perú.
+        </p>
+      </div>
+
+      <!-- Hero Banner Puntos Geodésicos -->
+      <div class="bg-gradient-to-br from-[#1c1c1c] via-[#262626] to-[#171717] rounded-2xl overflow-hidden shadow-2xl border border-gray-800 text-white mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-10 lg:p-12 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="bg-[#cc0000] text-white text-xs font-bold px-3 py-1 rounded-md uppercase tracking-wider">REGGEN • IGN</span>
+              <span class="bg-white/10 text-gray-200 text-xs font-medium px-3 py-1 rounded-md">SIRGAS-Perú (WGS84) • Zona 19 Sur</span>
+              <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold px-2.5 py-1 rounded-md">Validez SUNARP &amp; INGEMMET</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black text-white leading-snug">
+              ¿Qué es un Punto Geodésico de Orden "C" certificado por el IGN?
+            </h3>
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+              Es un hito físico de concreto con placa de bronce oficial, cuyas coordenadas tridimensionales de alta precisión han sido enlazadas a la <strong class="text-white">Red Geodésica Geocéntrica Nacional (REGGEN)</strong> mediante receptores GNSS geodésicos de doble frecuencia. Cada punto cuenta con la aprobación técnica y la emisión de la <strong class="text-white">Ficha Oficial del IGN</strong>, siendo requisito obligatorio por ley para sanear predios, catastros municipales y megaproyectos de ingeniería.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                <p class="text-[11px] text-gray-400 uppercase">Precisión RMS</p>
+                <p class="text-base font-bold text-white">&lt; 5 mm</p>
+                <span class="text-[10px] text-gray-400">Milimétrica</span>
+              </div>
+              <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                <p class="text-[11px] text-gray-400 uppercase">Tiempo Rastreo</p>
+                <p class="text-base font-bold text-white">2 a 4 hrs</p>
+                <span class="text-[10px] text-gray-400">Sesión continua</span>
+              </div>
+              <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                <p class="text-[11px] text-gray-400 uppercase">Enlace Base</p>
+                <p class="text-base font-bold text-white">ERP Tacna</p>
+                <span class="text-[10px] text-gray-400">Estación TN01</span>
+              </div>
+              <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                <p class="text-[11px] text-gray-400 uppercase">Legalidad</p>
+                <p class="text-base font-bold text-[#25D366]">100% Legal</p>
+                <span class="text-[10px] text-gray-400">Ley 28294</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-4">
+              <button onclick="openModal('Puntos Geodésicos de Orden C')" class="bg-[#cc0000] hover:bg-[#b00000] text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-lg">
+                Solicitar Cotización de Puntos Geodésicos
+              </button>
+              <a href="https://wa.me/51981928070?text=Hola%20ARA%20Y%20ANTARES%20SAC,%20deseo%20cotizar%20la%20certificacion%20de%20puntos%20geodesicos%20ante%20el%20IGN" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-5 py-3 rounded-xl text-sm transition-all border border-white/20">
+                Consultar por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="rounded-xl overflow-hidden border-2 border-white/20 shadow-2xl">
+              <img src="/geodesic_monument.jpg" alt="Punto Geodésico IGN" class="w-full h-80 sm:h-96 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Fases de Certificación IGN -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-black text-[#333333] text-center mb-8">
+          Proceso Integral de Certificación ante el IGN (6 Fases)
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">01</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Fase Previa</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Planeamiento y Reconocimiento</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Intervisibilidad y Cielo Despejado</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Evaluación del terreno, máscara de elevación &lt; 10°, ausencia de multipath y selección de par azimutal intervisible.</p>
+          </div>
+
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">02</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Construcción</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Monumentación del Hito</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Concreto Ciclópeo + Placa de Bronce</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Bloque de concreto de 0.40 x 0.40 x 0.60 m con placa de bronce oficial grabada con código alfanumérico y flecha al norte.</p>
+          </div>
+
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">03</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Campo</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Rastreo Satelital GNSS</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Trimble R8s Multifrecuencia</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Sesión estática continua de 2 a 4 horas enlazada directamente a las Estaciones de Rastreo Permanente (ERP) del IGN.</p>
+          </div>
+
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">04</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Gabinete</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Post-Procesamiento Geodésico</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Efemérides Precisas IGS</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Procesamiento de líneas base en Trimble Business Center con efemérides orbitales IGS y ajuste de red con error RMS &lt; 5 mm.</p>
+          </div>
+
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">05</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Documentación</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Elaboración de Expediente</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Monografía Oficial + Memoria</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Ficha monográfica con fotos en 4 puntos cardinales, croquis de acceso, coordenadas UTM (Zona 19S) y archivos RINEX crudos.</p>
+          </div>
+
+          <div class="bg-[#fafafa] rounded-xl border border-gray-200 p-6 shadow-sm">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xl font-black text-[#cc0000] bg-red-100 w-10 h-10 rounded-lg flex items-center justify-center font-mono">06</span>
+              <span class="text-xs font-bold text-gray-500 bg-white border border-gray-200 px-2 py-0.5 rounded">Aprobación Legal</span>
+            </div>
+            <h4 class="text-base font-bold text-[#333333] mb-1">Tramitación y Certificación IGN</h4>
+            <p class="text-xs font-semibold text-[#cc0000] mb-2">Resolución y Ficha Técnica Oficial</p>
+            <p class="text-xs text-gray-600 leading-relaxed">Ingreso por mesa de partes del IGN, seguimiento técnico y entrega del Certificado Oficial con validez legal vinculante.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Entregables del Cliente -->
+      <div class="bg-[#f9f9f9] rounded-2xl p-8 border border-gray-200 mb-16">
+        <h3 class="text-2xl font-black text-[#333333] text-center mb-6">
+          Entregables Oficiales que Recibe el Cliente
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm text-gray-700">
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">1. Certificado Oficial IGN</strong>
+            Documento del Estado Peruano que valida las coordenadas geodésicas del punto.
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">2. Ficha Técnica Monográfica</strong>
+            Fotografías, croquis de acceso, coordenadas UTM Zona 19S y elipsoidales.
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">3. Memoria Descriptiva</strong>
+            Firmada por Ingeniero Geodesta / Colegiado con metodología técnica.
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">4. Reporte de Ajuste Geodésico</strong>
+            Cálculo matemático de líneas base con precisión milimétrica.
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">5. Archivos RINEX Crudos</strong>
+            Paquete digital completo de las sesiones de observación GNSS.
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-gray-200">
+            <strong class="text-[#cc0000] block mb-1">6. Hito Físico Monumentado</strong>
+            Monumento de concreto con placa de bronce en el terreno del proyecto.
+          </div>
+        </div>
+      </div>
+
+      <!-- Operaciones de Campo (Brochure) -->
+      <div>
+        <h3 class="text-2xl font-black text-[#333333] text-center mb-2">
+          Operaciones de Campo e Instrumental (Brochure Corporativo)
+        </h3>
+        <p class="text-center text-gray-600 text-xs sm:text-sm max-w-2xl mx-auto mb-8">
+          Personal calificado en terreno para minería, irrigaciones, obras viales y saneamiento físico-legal en el sur del Perú.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+            <img src="/geodesic_monument.jpg" alt="Puntos Geodésicos" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="text-[10px] font-bold text-[#cc0000] uppercase">Geodesia Satelital</span>
+              <h4 class="font-bold text-[#333333] text-sm mt-0.5">Certificación de Puntos Geodésicos</h4>
+              <p class="text-xs text-gray-600 mt-1">Hitos de concreto con placa de bronce y enlace a la REGGEN del IGN.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+            <img src="/survey_fieldwork.jpg" alt="Topografía en Mina" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="text-[10px] font-bold text-[#cc0000] uppercase">Topografía Especializada</span>
+              <h4 class="font-bold text-[#333333] text-sm mt-0.5">Operaciones en Minería e Infraestructura</h4>
+              <p class="text-xs text-gray-600 mt-1">Ingenieros con EPP completo, estación total y dron RPAS en terreno.</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Control en Obra" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="text-[10px] font-bold text-[#cc0000] uppercase">Control Topográfico</span>
+              <h4 class="font-bold text-[#333333] text-sm mt-0.5">Planimetría, Altimetría y Rasantes</h4>
+              <p class="text-xs text-gray-600 mt-1">Verificación milimétrica de ejes estructurales y nivelación geométrica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALQUILER DE EQUIPOS TOPOGRÁFICOS (SECCIÓN ESPECIAL) -->
+  <section id="alquiler-equipos" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#f9f9f9] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-red-100 text-[#cc0000] text-xs font-bold uppercase tracking-wider mb-3">Disponibilidad Inmediata en Tacna</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#333333] tracking-tight">
+          Alquiler de Equipos Topográficos
+        </h2>
+        <div class="w-20 h-1 bg-[#cc0000] mx-auto mt-4 mb-4 rounded-full"></div>
+        <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+          Ponemos a disposición de empresas de ingeniería, mineras y contratistas nuestro parque de instrumentos de alta precisión con certificado de calibración vigente, accesorios de campo completos y opción de operador calificado.
+        </p>
+      </div>
+
+      <!-- Garantías Rápidas -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-12">
+        <div class="bg-[#f7f7f7] border border-gray-200 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">📋</span>
+          <div>
+            <h4 class="text-xs font-bold text-[#333333]">Calibración Oficial</h4>
+            <p class="text-[11px] text-gray-500">Certificados vigentes al día</p>
+          </div>
+        </div>
+        <div class="bg-[#f7f7f7] border border-gray-200 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">🚚</span>
+          <div>
+            <h4 class="text-xs font-bold text-[#333333]">Entrega Inmediata</h4>
+            <p class="text-[11px] text-gray-500">En Tacna y todo el sur</p>
+          </div>
+        </div>
+        <div class="bg-[#f7f7f7] border border-gray-200 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">👷</span>
+          <div>
+            <h4 class="text-xs font-bold text-[#333333]">Soporte Técnico</h4>
+            <p class="text-[11px] text-gray-500">Asesoría de ingenieros</p>
+          </div>
+        </div>
+        <div class="bg-[#f7f7f7] border border-gray-200 p-4 rounded-xl flex items-center gap-3">
+          <span class="text-2xl">📅</span>
+          <div>
+            <h4 class="text-xs font-bold text-[#333333]">Tarifas Flexibles</h4>
+            <p class="text-[11px] text-gray-500">Por día, semana o mes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid de los 6 Equipos Requeridos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- 1. GPS Diferencial Trimble R8s -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="GPS Diferencial Trimble R8s" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Máxima Precisión</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">Trimble</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">GPS Diferencial Trimble R8s</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Receptor GNSS Geodésico Multifrecuencia</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Sistema GNSS de doble frecuencia para geodesia satelital y posicionamiento cinemático en tiempo real (RTK) y estático con precisión milimétrica.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Chipset Trimble Maxwell 6 (440 canales)</li>
+                <li>✓ Rastreo satelital GPS, GLONASS, Galileo, BeiDou</li>
+                <li>✓ Precisión milimétrica estática y RTK en tiempo real</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                Base, Rover, colector Trimble Access, trípode, jalón y certificado.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('GPS Diferencial Trimble R8s')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20del%20GPS%20Diferencial%20Trimble%20R8s" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Estaciones Totales -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Estaciones Totales" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Alta Velocidad Láser</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">Leica / Topcon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">Estaciones Totales</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Topografía Electro-Óptica de Precisión</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Instrumentos de alta velocidad de lectura láser y precisión angular para levantamiento y replanteo de obras civiles y mineras.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Medición con y sin prisma reflectante (hasta 1,000 m)</li>
+                <li>✓ Precisión angular disponible de 1", 2" y 5"</li>
+                <li>✓ Compensador biaxial y doble pantalla iluminada</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                Estación total, trípode de madera/aluminio, prismas, jalón y baterías.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('Estaciones Totales')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20de%20Estaciones%20Totales" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Teodolitos -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" alt="Teodolitos" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Medición Angular</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">Digital</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">Teodolitos</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Teodolitos Electrónicos Digitales</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Instrumentos de medición angular digital diseñados para alineación rápida de ejes estructurales, verticalidad y replanteo de cimientos.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Precisión angular de 2 a 5 segundos de arco</li>
+                <li>✓ Pantalla LCD dual con teclado numérico accesible</li>
+                <li>✓ Plomada óptica/láser para centrado inmediato en hito</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                Teodolito calibrado, trípode de aluminio, mira de 5 m y maletín.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('Teodolitos')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20de%20Teodolito%20Electr%C3%B3nico" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Drones Phantom 4 Pro v2.0 -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=800&q=80" alt="Drones Phantom 4 Pro v2.0" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Obturador Mecánico 1"</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">DJI RPAS</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">Drones Phantom 4 Pro v2.0</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Fotogrametría Aérea Profesional</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Aeronave pilotada por control remoto optimizada para fotogrametría aérea y nubes de puntos 3D con sensor de 1 pulgada y 20 MP.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Sensor CMOS de 1" y 20 MP con obturador mecánico sin distorsión</li>
+                <li>✓ Transmisión OcuSync HD y evasión de obstáculos 5 direcciones</li>
+                <li>✓ Generación de ortomosaicos y curvas de nivel de alta fidelidad</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                Dron Phantom 4 Pro V2.0, control remoto, 3 baterías, cargador múltiple y estuche rígido.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('Drones Phantom 4 Pro v2.0')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler / Operación
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20del%20Dron%20Phantom%204%20Pro%20v2.0" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Niveles Topográficos -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Niveles Topográficos" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Altimetría Exacta</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">Automático 32x</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">Niveles Topográficos</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Niveles Ópticos y Automáticos</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Niveles ópticos automáticos con compensador magnético amortiguado para control de rasantes, nivelación de plataformas y pendientes de canales.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Aumento óptico de 24x / 32x con lentes antirreflejo</li>
+                <li>✓ Compensador magnético automático de alta sensibilidad</li>
+                <li>✓ Precisión de nivelación de 1.0 mm por kilómetro doble</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                Nivel automático calibrado, trípode de aluminio y mira de 5 metros.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('Niveles Topográficos')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20de%20Nivel%20Topogr%C3%A1fico" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. GPS Navegador -->
+        <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between hover:border-[#cc0000]/40">
+          <div>
+            <div class="relative h-48 bg-gray-900 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1516216628859-9bcceabb84ca?auto=format&fit=crop&w=800&q=80" alt="GPS Navegador" class="w-full h-full object-cover opacity-85">
+              <span class="absolute top-3 left-3 bg-[#cc0000] text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow uppercase">Prospección en Campo</span>
+              <span class="absolute top-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-1 rounded">Garmin</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-black text-[#333333] mb-1">GPS Navegador</h3>
+              <p class="text-xs text-gray-500 mb-3 font-semibold">Navegadores Portátiles de Mano</p>
+              <p class="text-xs text-gray-600 mb-4 leading-relaxed">
+                Receptores portátiles de alta sensibilidad para reconocimiento preliminar de predios, geolocalización de hitos y trazo de rutas en campo.
+              </p>
+              <ul class="text-xs space-y-1.5 text-gray-700 mb-4 pb-4 border-b border-gray-100">
+                <li>✓ Antena Quad Helix con soporte GPS y GLONASS</li>
+                <li>✓ Almacenamiento de hasta 5,000 waypoints y tracks</li>
+                <li>✓ Exportación directa de puntos a formato KML y AutoCAD</li>
+              </ul>
+              <div class="bg-[#f9f9f9] p-3 rounded-lg text-xs text-gray-600">
+                <span class="font-bold text-[#333333] block mb-1">Kit Incluye:</span>
+                GPS de mano Garmin, cable de datos USB, pilas y funda protectora.
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0 space-y-2">
+            <button onclick="openModal('GPS Navegador')" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs py-2.5 rounded-lg shadow-sm transition-all">
+              Cotizar Alquiler
+            </button>
+            <a href="https://wa.me/51981928070?text=Deseo%20cotizar%20el%20alquiler%20del%20GPS%20Navegador" target="_blank" class="block text-center bg-gray-100 hover:bg-emerald-50 text-gray-700 hover:text-emerald-700 font-semibold text-xs py-2 rounded-lg transition-colors">
+              Consultar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta de Video Oficial de YouTube -->
+      <div class="bg-[#1e1e1e] text-white rounded-2xl p-6 sm:p-10 shadow-xl border border-gray-800">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-red-950/80 border border-red-800/50 text-red-300 text-xs font-bold uppercase tracking-wider">
+              Video Informativo • Operaciones en Terreno
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-black text-white leading-tight">
+              Topografía de Alta Precisión y Fotogrametría Aérea en Tacna
+            </h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Observe nuestros equipos y cuadrillas en acción en proyectos reales en Tacna y el sur del Perú. Garantizamos precisión milimétrica mediante enlaces geodésicos a la Red Geodésica Nacional (IGN), procesamiento en Civil 3D y ortomosaicos con Drones Phantom 4 Pro.
+            </p>
+            <div class="pt-3">
+              <a href="https://www.youtube.com/watch?v=n-UINY0Dlnw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-[#cc0000] hover:bg-[#a80000] text-white font-bold text-xs sm:text-sm px-6 py-3 rounded-lg shadow-md transition-all">
+                ▶ Ver en Canal de YouTube Oficial
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl border border-gray-700 bg-black aspect-video">
+              <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/n-UINY0Dlnw" title="ARA & ANTARES SAC - Topografía y Equipos en Tacna" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="text-[11px] text-gray-400 text-center mt-2">Canal Oficial: ARA &amp; ANTARES SAC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#ffffff]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-md bg-red-50 text-[#cc0000] text-xs font-bold uppercase tracking-wider mb-2">Especialidades</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-[#333333]">Nuestros Servicios</h2>
+        <div class="w-16 h-1 bg-[#cc0000] mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-gray-600 text-base">Soluciones de ingeniería y arquitectura con altos estándares de cumplimiento en el sur peruano.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Tarjeta 1 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all border-t-4 border-t-[#cc0000] flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6 text-[#cc0000]">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">Construcción y Edificación</h3>
+            <p class="text-gray-700 bg-[#f4f4f4] p-3.5 rounded-lg border-l-4 border-[#cc0000] text-sm leading-relaxed mb-6 font-medium">
+              Diseño y construcción de viviendas, departamentos, obras civiles y saneamiento legal.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-600 mb-6">
+              <li>✓ Diseño arquitectónico y estructural sismorresistente</li>
+              <li>✓ Edificación de obras civiles públicas y privadas</li>
+              <li>✓ Saneamiento físico-legal de predios urbanos y rurales</li>
+              <li>✓ Supervisión de obra y control de calidad</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Construcción y Edificación')" class="w-full text-center bg-gray-50 hover:bg-red-50 text-[#333333] hover:text-[#cc0000] py-2.5 rounded-lg font-bold text-sm transition-colors">
+            Solicitar Cotización →
+          </button>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all border-t-4 border-t-[#cc0000] flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6 text-[#cc0000]">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v4h-2zm0 6h2v2h-2z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">Topografía y Geodesia</h3>
+            <p class="text-gray-700 bg-[#f4f4f4] p-3.5 rounded-lg border-l-4 border-[#cc0000] text-sm leading-relaxed mb-6 font-medium">
+              Levantamientos topográficos, control en planimetría, altimetría y volumétrico, certificación de puntos geodésicos.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-600 mb-6">
+              <li>✓ Levantamientos catastrales y mineros</li>
+              <li>✓ Control planimétrico, altimétrico y cálculo volumétrico</li>
+              <li>✓ Certificación de puntos geodésicos de orden 'C'</li>
+              <li>✓ Fotogrametría con dron (RPAS) de alta resolución</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Topografía y Geodesia')" class="w-full text-center bg-gray-50 hover:bg-red-50 text-[#333333] hover:text-[#cc0000] py-2.5 rounded-lg font-bold text-sm transition-colors">
+            Solicitar Cotización →
+          </button>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="bg-white rounded-xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all border-t-4 border-t-[#cc0000] flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-red-50 flex items-center justify-center mb-6 text-[#cc0000]">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold text-[#333333] mb-3">Consultoría e Inmobiliaria</h3>
+            <p class="text-gray-700 bg-[#f4f4f4] p-3.5 rounded-lg border-l-4 border-[#cc0000] text-sm leading-relaxed mb-6 font-medium">
+              Asesoría gratuita para diseño, construcción y saneamiento legal. Consultoría en obras de irrigaciones.
+            </p>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-600 mb-6">
+              <li>✓ Asesoría gratuita para diseño, construcción y saneamiento</li>
+              <li>✓ Consultoría especializada en obras de irrigaciones</li>
+              <li>✓ Intermediación inmobiliaria y tasación de predios</li>
+              <li>✓ Elaboración de expedientes técnicos y licencias</li>
+            </ul>
+          </div>
+          <button onclick="openModal('Consultoría e Inmobiliaria')" class="w-full text-center bg-gray-50 hover:bg-red-50 text-[#333333] hover:text-[#cc0000] py-2.5 rounded-lg font-bold text-sm transition-colors">
+            Solicitar Cotización →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPOGRAFÍA Y EQUIPOS -->
+  <section id="topografia" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#f4f4f4] border-y border-gray-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-md bg-red-100 text-[#cc0000] text-xs font-bold uppercase tracking-wider mb-2">Detalle Técnico</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-[#333333]">Equipos de Alta Precisión</h2>
+        <div class="w-16 h-1 bg-[#cc0000] mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-gray-600 text-base">Contamos con instrumental tecnológico de última generación para empresas mineras, constructoras y obras de infraestructura.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+          <span class="text-xs font-bold text-[#cc0000] uppercase">Geodesia Satelital</span>
+          <h3 class="text-lg font-bold text-[#333333] mt-1 mb-2">GPS Diferencial doble frecuencia</h3>
+          <p class="text-xs text-gray-600">Receptores GNSS multifrecuencia para posicionamiento RTK en tiempo real y post-proceso geodésico milimétrico.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+          <span class="text-xs font-bold text-[#cc0000] uppercase">Aerofotogrametría</span>
+          <h3 class="text-lg font-bold text-[#333333] mt-1 mb-2">Dron (RPAS)</h3>
+          <p class="text-xs text-gray-600">Fotogrametría aérea con sensores de alta resolución para ortomosaicos, curvas de nivel y cálculo volumétrico.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+          <span class="text-xs font-bold text-[#cc0000] uppercase">Topografía Electrónica</span>
+          <h3 class="text-lg font-bold text-[#333333] mt-1 mb-2">Estaciones Totales de Precisión</h3>
+          <p class="text-xs text-gray-600">Medición electro-óptica angular y de distancia con y sin prisma para replanteo milimétrico de estructuras.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+          <span class="text-xs font-bold text-[#cc0000] uppercase">Altimetría</span>
+          <h3 class="text-lg font-bold text-[#333333] mt-1 mb-2">Niveles Automáticos</h3>
+          <p class="text-xs text-gray-600">Nivelación geométrica con compensador automático para control de rasantes y canales hidráulicos.</p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+          <span class="text-xs font-bold text-[#cc0000] uppercase">Medición Angular</span>
+          <h3 class="text-lg font-bold text-[#333333] mt-1 mb-2">Teodolitos Electrónicos</h3>
+          <p class="text-xs text-gray-600">Medición directa con display digital y plomada de alta sensibilidad para alineación de ejes estructurales.</p>
+        </div>
+
+        <div class="bg-[#262626] text-white rounded-xl p-6 shadow-sm border border-[#383838]">
+          <span class="text-xs font-bold text-red-400 uppercase">Brigadas en Campo</span>
+          <h3 class="text-lg font-bold text-white mt-1 mb-2">Cuadrillas Topográficas</h3>
+          <p class="text-xs text-gray-300">Personal calificado con equipos completos calibrados para servicio inmediato en Tacna y todo el sur.</p>
+        </div>
+      </div>
+
+      <!-- Menciones específicas solicitadas -->
+      <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="p-4 rounded-xl bg-[#f9f9f9]">
+          <div class="text-2xl mb-2">💻</div>
+          <h4 class="font-bold text-[#333333] text-sm mb-1">Software de Ingeniería</h4>
+          <p class="text-xs text-gray-600">Procesamiento de datos topográficos con software de ingeniería (AutoCAD, Civil 3D, ArcGIS).</p>
+        </div>
+        <div class="p-4 rounded-xl bg-[#f9f9f9]">
+          <div class="text-2xl mb-2">🎓</div>
+          <h4 class="font-bold text-[#333333] text-sm mb-1">Capacitaciones Especializadas</h4>
+          <p class="text-xs text-gray-600">Capacitaciones para operar equipos topográficos dirigidas a personal técnico y profesionales.</p>
+        </div>
+        <div class="p-4 rounded-xl bg-[#f9f9f9]">
+          <div class="text-2xl mb-2">🔍</div>
+          <h4 class="font-bold text-[#333333] text-sm mb-1">Aseguramiento Técnico</h4>
+          <p class="text-xs text-gray-600">Control de calidad en obra con verificación continua de tolerancias y niveles geométricos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#ffffff]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-md bg-red-50 text-[#cc0000] text-xs font-bold uppercase tracking-wider mb-2">Institucional</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-[#333333]">Sobre Nosotros</h2>
+        <div class="w-16 h-1 bg-[#cc0000] mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-gray-700 text-base font-medium leading-relaxed">
+          Conformada por un equipo multidisciplinario de profesionales altamente calificados de gran experiencia. Nuestro objetivo es brindar el mejor servicio técnico y profesional en el campo de la construcción, inmobiliaria e información geográfica.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- Misión -->
+        <div class="bg-[#f4f4f4] rounded-2xl p-8 border-t-4 border-[#cc0000] shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🎯</span>
+            <div>
+              <span class="text-xs font-bold text-[#cc0000] uppercase tracking-wider">Propósito</span>
+              <h3 class="text-2xl font-black text-[#333333]">Nuestra Misión</h3>
+            </div>
+          </div>
+          <p class="text-gray-700 italic border-l-2 border-gray-300 pl-4 text-sm sm:text-base leading-relaxed">
+            "Proveer con satisfacción a nuestros clientes los servicios en la rama de edificación de obras civiles e información geográfica, con la mejor calidad, tanto en materiales y mano de obra responsable; en el mejor tiempo propuesto para que nuestro cliente, sea nuestra mejor recomendación."
+          </p>
+        </div>
+
+        <!-- Visión -->
+        <div class="bg-[#f4f4f4] rounded-2xl p-8 border-t-4 border-[#333333] shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🔭</span>
+            <div>
+              <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">Proyección</span>
+              <h3 class="text-2xl font-black text-[#333333]">Nuestra Visión</h3>
+            </div>
+          </div>
+          <p class="text-gray-700 italic border-l-2 border-gray-300 pl-4 text-sm sm:text-base leading-relaxed">
+            "Abrir nuestra mente a la integración de todos los recursos dentro de la industria de la construcción innovando tecnología y confort al servicio de nuestros clientes."
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#242424] text-white rounded-xl p-6 text-center">
+        <p class="text-sm font-semibold">
+          🏢 Cobertura integral en Tacna, Moquegua, Ilo, Arequipa y Puno para el sector minero, gubernamental y privado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 bg-[#f4f4f4]">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-md bg-red-100 text-[#cc0000] text-xs font-bold uppercase tracking-wider mb-2">Comunicación Directa</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-[#333333]">Contáctanos</h2>
+        <div class="w-16 h-1 bg-[#cc0000] mx-auto mt-3 mb-4 rounded-full"></div>
+        <p class="text-gray-600 text-base">Atención personalizada en nuestras oficinas de Tacna o vía canales telefónicos y digitales.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Información de contacto -->
+        <div class="lg:col-span-5 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm space-y-6">
+          <div>
+            <h3 class="text-lg font-bold text-[#333333] mb-4">Datos de la Empresa</h3>
+            
+            <div class="space-y-4 text-sm text-gray-700">
+              <div class="flex items-start gap-3">
+                <span class="text-lg">📍</span>
+                <div>
+                  <strong class="block text-gray-900">Ubicación:</strong>
+                  <span>Avenida Patricio Melendez N° 525, 2do piso, Tacna - Perú.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-lg">📞</span>
+                <div>
+                  <strong class="block text-gray-900">Teléfonos de Contacto:</strong>
+                  <p>(052) 426373 (Fijo)</p>
+                  <p>981928070 (WhatsApp principal)</p>
+                  <p>991933211 / 972866611</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-lg">✉️</span>
+                <div>
+                  <strong class="block text-gray-900">Correo Electrónico:</strong>
+                  <a href="mailto:araantares@gmail.com" class="text-[#cc0000] hover:underline">araantares@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-gray-50 border border-gray-200 text-xs text-gray-600">
+            <strong>Público Objetivo:</strong> Empresas de ingeniería, mineras, constructoras y público general en Tacna y sur del Perú.
+          </div>
+        </div>
+
+        <!-- Formulario con atributo netlify -->
+        <div class="lg:col-span-7 bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+          <form 
+            name="contacto" 
+            method="POST" 
+            data-netlify="true" 
+            netlify 
+            action="/#contacto" 
+            class="space-y-4"
+          >
+            <input type="hidden" name="form-name" value="contacto" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-700 mb-1">Nombre Completo *</label>
+                <input type="text" name="nombre" required placeholder="Su nombre" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:border-[#cc0000] outline-none">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-gray-700 mb-1">Teléfono *</label>
+                <input type="tel" name="telefono" required placeholder="Número de celular" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:border-[#cc0000] outline-none">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1">Correo Electrónico *</label>
+              <input type="email" name="email" required placeholder="correo@ejemplo.com" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:border-[#cc0000] outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 mb-1">Mensaje *</label>
+              <textarea name="mensaje" rows="4" required placeholder="Describa su proyecto, ubicación o consulta técnica..." class="w-full px-4 py-2.5 rounded-lg border border-gray-300 text-sm focus:border-[#cc0000] outline-none"></textarea>
+            </div>
+
+            <div class="pt-2 flex flex-col sm:flex-row gap-3 items-center">
+              <button type="submit" class="w-full sm:w-auto bg-[#cc0000] hover:bg-[#a80000] text-white font-bold px-8 py-3 rounded-lg text-sm transition-colors cursor-pointer">
+                Enviar Mensaje
+              </button>
+              <a href="https://wa.me/51981928070?text=Hola%20ARA%20Y%20ANTARES%20SAC,%20deseo%20solicitar%20información%20desde%20su%20página%20web" target="_blank" class="w-full sm:w-auto text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg text-sm transition-colors">
+                Escribir por WhatsApp
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#141414] text-gray-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-[#2a2a2a]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-[#1a1a1a] overflow-hidden flex items-center justify-center p-1 border border-gray-700 shrink-0">
+          <img src="/logo-ara.jpg" alt="Logo ARA & ANTARES SAC" class="w-full h-full object-contain rounded">
+        </div>
+        <div>
+          <p class="text-sm font-bold text-white mb-0.5">ARA &amp; ANTARES SAC</p>
+          <p class="text-gray-400 text-[11px]">Topografía, Fotogrametría con Dron y Alquiler de Equipos en Tacna.</p>
+          <p class="text-gray-500 text-[11px]">Avenida Patricio Melendez N° 525, 2do piso, Tacna - Perú.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-5 font-semibold text-gray-400">
+        <a href="#inicio" class="hover:text-white">Inicio</a>
+        <a href="#puntos-geodesicos" class="hover:text-white text-[#cc0000]">Puntos Geodésicos (IGN)</a>
+        <a href="#alquiler-equipos" class="hover:text-white text-[#cc0000]">Alquiler de Equipos</a>
+        <a href="#servicios" class="hover:text-white">Servicios</a>
+        <a href="#topografia" class="hover:text-white">Topografía</a>
+        <a href="#nosotros" class="hover:text-white">Nosotros</a>
+        <a href="#contacto" class="hover:text-white">Contacto</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="https://www.youtube.com/watch?v=n-UINY0Dlnw" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded bg-[#282828] hover:bg-[#cc0000] flex items-center justify-center text-white transition-colors" title="YouTube">yt</a>
+        <a href="https://www.facebook.com/profile.php?id=61566847688138" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded bg-[#282828] hover:bg-[#1877F2] flex items-center justify-center text-white transition-colors" title="Facebook Oficial">fb</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded bg-[#282828] hover:bg-[#cc0000] flex items-center justify-center text-white transition-colors" title="LinkedIn">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/51981928070?text=Hola%20ARA%20Y%20ANTARES%20SAC,%20deseo%20cotizar%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform" aria-label="WhatsApp">
+    <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- MODAL COTIZAR -->
+  <div id="quote-modal" class="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 relative">
+      <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl font-bold">&times;</button>
+      <h3 class="text-xl font-bold text-[#333333] mb-1">Cotizar Alquiler / Proyecto</h3>
+      <p class="text-xs text-gray-500 mb-4">ARA Y ANTARES SAC • Tacna - Perú</p>
+
+      <form id="modal-form" onsubmit="handleModalSubmit(event)" class="space-y-3 text-sm">
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">Equipo o Servicio Requerido</label>
+          <select id="modal-service" class="w-full px-3 py-2 rounded-lg border border-gray-300 text-xs">
+            <optgroup label="Geodesia y Certificación">
+              <option value="Puntos Geodésicos de Orden C (IGN)">Certificación de Puntos Geodésicos de Orden C (IGN)</option>
+              <option value="Topografía y Geodesia">Topografía y Geodesia Satelital GNSS</option>
+              <option value="Fotogrametría con Dron">Fotogrametría con Dron</option>
+            </optgroup>
+            <optgroup label="Alquiler de Equipos">
+              <option value="GPS Diferencial Trimble R8s">GPS Diferencial Trimble R8s (Base + Rover)</option>
+              <option value="Estaciones Totales">Estaciones Totales de Precisión</option>
+              <option value="Teodolitos">Teodolitos Electrónicos</option>
+              <option value="Drones Phantom 4 Pro v2.0">Dron Phantom 4 Pro V2.0</option>
+              <option value="Niveles Topográficos">Nivel Topográfico Automático</option>
+              <option value="GPS Navegador">GPS Navegador Garmin</option>
+            </optgroup>
+            <optgroup label="Construcción e Inmobiliaria">
+              <option value="Construcción y Edificación">Construcción y Edificación</option>
+              <option value="Consultoría e Inmobiliaria">Consultoría e Inmobiliaria</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">Nombre / Empresa</label>
+          <input type="text" id="modal-name" required placeholder="Su nombre o empresa" class="w-full px-3 py-2 rounded-lg border border-gray-300 text-xs">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">Celular de Contacto</label>
+          <input type="tel" id="modal-phone" required placeholder="Ej. 981928070" class="w-full px-3 py-2 rounded-lg border border-gray-300 text-xs">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1">Detalle breve o días de alquiler</label>
+          <textarea id="modal-desc" rows="3" placeholder="Ubicación de obra, días estimados de alquiler o especificaciones..." class="w-full px-3 py-2 rounded-lg border border-gray-300 text-xs"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-[#cc0000] hover:bg-[#a80000] text-white font-bold py-2.5 rounded-lg text-xs transition-colors">
+          Enviar Cotización a WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Navigation toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+    if (menuBtn) {
+      menuBtn.addEventListener('click', toggleMenu);
+    }
+
+    // Modal controls
+    const quoteModal = document.getElementById('quote-modal');
+    const modalService = document.getElementById('modal-service');
+
+    function openModal(service) {
+      if (service && modalService) {
+        modalService.value = service;
+      }
+      quoteModal.classList.remove('hidden');
+    }
+
+    function closeModal() {
+      quoteModal.classList.add('hidden');
+    }
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const service = document.getElementById('modal-service').value;
+      const name = document.getElementById('modal-name').value;
+      const phone = document.getElementById('modal-phone').value;
+      const desc = document.getElementById('modal-desc').value;
+
+      const text = `Hola ARA Y ANTARES SAC, deseo cotizar:\n- Servicio: ${service}\n- Nombre: ${name}\n- Celular: ${phone}\n- Detalle: ${desc}`;
+      window.open('https://wa.me/51981928070?text=' + encodeURIComponent(text), '_blank');
+      closeModal();
+    }
+  </script>
+</body>
+</html>
